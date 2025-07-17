@@ -1,0 +1,12 @@
+.dashboard {
+  padding: 2rem;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
