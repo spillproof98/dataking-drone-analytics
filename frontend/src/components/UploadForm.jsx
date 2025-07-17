@@ -11,7 +11,10 @@ const UploadForm = ({ onUploadSuccess }) => {
     formData.append('file', file);
 
     try {
-      const res = await axios.post('http://localhost:8000/api/upload-report', formData);
+      const res = await axios.post(
+        'https://dataking-drone-analytics.onrender.com/api/upload-report',
+        formData
+      );
       console.log("✅ File Upload response:", res.data);
       alert('Uploaded successfully');
       onUploadSuccess?.(res.data);

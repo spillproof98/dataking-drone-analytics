@@ -17,18 +17,20 @@ const Dashboard = () => {
   const columns = ['id', 'drone_id', 'type', 'timestamp', 'latitude', 'longitude'];
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/violations')
-      .then(res => {
+    axios
+      .get("https://dataking-drone-analytics.onrender.com/api/violations")
+      .then((res) => {
         const data = res.data;
         setViolations(data.violations || []);
         setKpis(data.kpis || []);
         setPieData(data.pieData || {});
         setTimeData(data.timeData || {});
       })
-      .catch(err => {
+      .catch((err) => {
         console.error("Error fetching violations:", err);
       });
   }, []);
+
 
   const handleUpload = (data) => {
     setViolations(data.violations || []);
