@@ -1,0 +1,8 @@
+{
+  "short_name": "Dataking",
+  "name": "Dataking Drone Analytics",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
